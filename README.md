@@ -1,1 +1,7 @@
-# Skeleton-Loading-using-CSS-
+# How to build Skeleton Screens with CSS for better UX
+
+Tech Stack: HTML, CSS(SCSS), Javascript
+
+Live demo: <https://daily-dev-skeleton-screen.netlify.app/>
+
+This repository is based on the tutorial ["How to build Skeleton Screens with CSS for better UX"](www.freecodecamp.org/news/how-to-build-skeleton-screens-using-css-for-better-user-experience)
