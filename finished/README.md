@@ -1,1 +1,1 @@
-This folder contains the code for the card layout
+### This folder contains the finished code for the project
