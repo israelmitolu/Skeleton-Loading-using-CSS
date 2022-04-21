@@ -11,13 +11,27 @@ body {
   min-height: 100vh;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  gap: 1rem;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 1rem;
+a {
+  text-decoration: none;
+}
+
+img[alt] {
+  text-indent: -10000px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem;
 }
 
 .card {
@@ -34,10 +48,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 350px;
-  height: 380px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 330px;
+  height: auto;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  margin: 2rem;
 }
 
 .card__header {
@@ -95,13 +112,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0.5rem 1.5rem;
+  margin: 0.5rem;
 }
 
 .card:hover {
@@ -126,5 +142,43 @@ ion-icon:hover:nth-of-type(2) {
 
 ion-icon:hover:nth-of-type(3) {
   color: #fa6620;
+}
+
+.skeleton {
+  -webkit-animation: skeleton-loading 1s linear infinite alternate;
+          animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@-webkit-keyframes skeleton-loading {
+  0% {
+    background-color: #c2cfd6;
+  }
+  100% {
+    background-color: #f0f3f5;
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #c2cfd6;
+  }
+  100% {
+    background-color: #f0f3f5;
+  }
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.skeleton-text__body {
+  width: 75%;
+}
+
+.skeleton-footer {
+  width: 30%;
 }
 /*# sourceMappingURL=styles.css.map */
